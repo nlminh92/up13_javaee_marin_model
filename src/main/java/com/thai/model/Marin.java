@@ -28,6 +28,9 @@ public class Marin {
     @Column(name = "date_de_naissance", length = 16)
     private Date dateDeNaissance;
 
+    @Column(name = "bateau")
+    private Bateau bateau;
+
     public Date getDateDeNaissance() {
         return dateDeNaissance;
     }
@@ -52,9 +55,17 @@ public class Marin {
         this.prenom = prenom;
     }
 
-    @Override
-    public String toString() {
-        return "Nom: " + getNom() + " " + getPrenom() + ", date_de_naissance = " + dateDeNaissance.toString();
+
+    public Bateau getBateau() {
+        return bateau;
     }
 
+    public void setBateau(Bateau bateau) {
+        this.bateau = bateau;
+    }
+
+    @Override
+    public String toString() {
+        return "Nom: " + getNom() + " " + getPrenom() + ", date_de_naissance = " + dateDeNaissance.toString() + ", bateau: ";
+    }
 }

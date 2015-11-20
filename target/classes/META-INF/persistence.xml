@@ -8,6 +8,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
         <class>com.thai.model.Marin</class>
+        <class>com.thai.model.Bateau</class>
 
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tp_javaee_2015" />
