@@ -16,6 +16,15 @@ public class NomPrenom implements Serializable {
     @Column(name="prenom", nullable=false, length=40)
     private String prenom;
 
+    public NomPrenom() {
+        this(null, null);
+    }
+
+    public NomPrenom(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
     public String getNom() {
         return nom;
     }
